@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	Filter-Mode
-Summary:	XML::Filter::Mode - Filter out all chunks not in the current mode.
-#Summary(pl):	
+Summary:	XML::Filter::Mode - filter out all chunks not in the current mode
+Summary(pl):	XML::Filter::Mode - odfiltrowywanie fragmentów spoza aktualnego trybu
 Name:		perl-XML-Filter-Mode
 Version:	0.02
 Release:	1
@@ -24,10 +24,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Filters portions of documents based on a C<mode=> attribute.
+XML::Filter::Mode Perl module filters portions of documents based on a
+"mode" attribute.
 
-# %description -l pl
-# TODO
+%description -l pl
+Modu³ Perla XML::Filter::Mode s³u¿y do odfiltrowywania fragmentów
+dokumentów na podstawie atrybutu "mode".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
