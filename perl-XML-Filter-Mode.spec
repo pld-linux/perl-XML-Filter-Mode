@@ -3,8 +3,8 @@
 %bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	Filter-Mode
+%define		pdir	XML
+%define		pnam	Filter-Mode
 Summary:	XML::Filter::Mode - filter out all chunks not in the current mode
 Summary(pl):	XML::Filter::Mode - odfiltrowywanie fragmentów spoza aktualnego trybu
 Name:		perl-XML-Filter-Mode
