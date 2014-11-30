@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	XML
 %define		pnam	Filter-Mode
+%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Filter::Mode - filter out all chunks not in the current mode
 Summary(pl.UTF-8):	XML::Filter::Mode - odfiltrowywanie fragmentów spoza aktualnego trybu
 Name:		perl-XML-Filter-Mode
@@ -14,6 +14,7 @@ License:	BSD or Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	09369387b622557e7815166fbef21d91
+URL:		http://search.cpan.org/dist/XML-Filter-Mode/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
