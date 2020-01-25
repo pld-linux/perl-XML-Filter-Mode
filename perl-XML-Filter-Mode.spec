@@ -4,7 +4,6 @@
 
 %define		pdir	XML
 %define		pnam	Filter-Mode
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Filter::Mode - filter out all chunks not in the current mode
 Summary(pl.UTF-8):	XML::Filter::Mode - odfiltrowywanie fragmentów spoza aktualnego trybu
 Name:		perl-XML-Filter-Mode
